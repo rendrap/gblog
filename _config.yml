@@ -23,3 +23,5 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+sass:
+  style: compact # possible values: nested expanded compact compressed

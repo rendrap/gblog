@@ -1,6 +1,19 @@
 // Custom CSS - Overide Bootstrap
 
 //Navbar
-.navbar-brand img {
-    height: 4.5rem;
+
+//overide logo height
+// .navbar-brand img {
+//     height: 4.5rem;
+// }
+
+.btn-round {
+    border-width: 1px;
+    border-radius: 30px !important;
+    opacity: 0.79;
+    padding: 9px 18px
+}
+
+.black-border {
+  border-color: #000000ad;
 }

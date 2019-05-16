@@ -102,3 +102,26 @@ img.bg-image {
   position: relative;
   z-index:20;
 }
+
+.icon-size {
+  height: 16px;
+  width: 16px;
+}
+
+.text-black {
+  color:#000;
+}
+
+.overlay-content > .subtitle {
+  font-size: 3rem;
+  font-weight: 800;
+}
+$lightcoral:#FF2F63;
+
+.lightcoral {
+  color: $lightcoral;
+}
+
+.btn-heading {
+    @include button-variant($lightcoral, darken($lightcoral, 7.5%), darken($lightcoral, 10%), lighten($lightcoral,5%), lighten($lightcoral, 10%), darken($lightcoral,30%));
+}

@@ -61,20 +61,14 @@ body {
 
 //Navbar //
 
-//overide logo height
-// .navbar-brand img {
-//     height: 4.5rem;
-// }
-
 .btn-round {
   border-width: 1px;
   border-radius: 30px !important;
   opacity: 0.79;
   padding: 9px 18px;
 }
-
-.black-border {
-  border-color: #000000ad;
+.closer-left {
+  margin-left: -4px;
 }
 
 // Headline //
@@ -125,4 +119,8 @@ $lightskyblue: #39C1CF;
 }
 .overlay-content>.sub-heading {
   @include font-size(3rem);
+}
+.long-button {
+  padding: 4px 29px;
+  @include font-size(1.2rem);
 }

@@ -112,16 +112,17 @@ img.bg-image {
   color:#000;
 }
 
-.overlay-content > .subtitle {
-  font-size: 3rem;
-  font-weight: 800;
-}
 $lightcoral:#FF2F63;
-
+$lightskyblue: #39C1CF;
 .lightcoral {
   color: $lightcoral;
 }
-
+.lightskyblue {
+  color: $lightskyblue;
+}
 .btn-heading {
-    @include button-variant($lightcoral, darken($lightcoral, 7.5%), darken($lightcoral, 10%), lighten($lightcoral,5%), lighten($lightcoral, 10%), darken($lightcoral,30%));
+  @include button-variant($lightcoral, darken($lightcoral, 7.5%), darken($lightcoral, 10%), lighten($lightcoral,5%), lighten($lightcoral, 10%), darken($lightcoral,30%));
+}
+.overlay-content>.sub-heading {
+  @include font-size(3rem);
 }

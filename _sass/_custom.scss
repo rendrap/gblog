@@ -114,6 +114,8 @@ $lightskyblue: #39C1CF;
 .lightskyblue {
   color: $lightskyblue;
 }
+
+// Create custom button color & all the state, using bootstrap mixins
 .btn-heading {
   @include button-variant($lightcoral, darken($lightcoral, 7.5%), darken($lightcoral, 10%), lighten($lightcoral,5%), lighten($lightcoral, 10%), darken($lightcoral,30%));
 }

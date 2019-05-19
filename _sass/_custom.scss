@@ -86,6 +86,18 @@ body {
   background: transparent !important;
 }
 
+@include media-breakpoint-up(xs) {
+  .logo-sizing {
+    width: 50%;
+    height: 50%;
+  }
+}
+@include media-breakpoint-up(md) {
+  .logo-sizing {
+    width: 80%;
+    height: 80%;
+  }
+}
 // Hamburger menu animation
 .navbar-toggler .top-bar {
   transform: translate(3px) rotate(45deg);

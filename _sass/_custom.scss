@@ -308,7 +308,10 @@ color: #404342;
   background-color: #FFFFFF;
   height: 20px;
   width: 15px;
-  // z-index: -1;
-  // opacity: 0.7;
-
+}
+// h1 responesive line break
+@include media-breakpoint-up(sm) {
+  .line-break {
+    display: none;
+  }
 }

@@ -326,3 +326,13 @@ color: #404342;
     display: none;
   }
 }
+.radial-gradient {
+  background: #ffffff;
+  background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #e0e0e0 100%);
+  background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#e0e0e0 100%);
+  background: radial-gradient(ellipse at center,  #ffffff 0%,#e0e0e0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0',GradientType=1 );
+}
+#cta img {
+  mix-blend-mode: multiply;
+}

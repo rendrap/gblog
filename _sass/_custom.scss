@@ -179,6 +179,9 @@ $lightblue: #00CDE2;
 .btn-heading {
   @include button-variant($lightcoral, darken($lightcoral, 7.5%), darken($lightcoral, 10%), lighten($lightcoral,5%), lighten($lightcoral, 10%), darken($lightcoral,30%));
 }
+.btn-cta {
+  @include button-variant($lightskyblue, darken($lightskyblue, 7.5%), darken($lightskyblue, 10%), lighten($lightskyblue,5%), lighten($lightskyblue, 10%), darken($lightskyblue,30%));
+}
 .overlay-content>.sub-heading {
   @include font-size(3rem);
 }
@@ -205,18 +208,6 @@ div.laptop-wrapper iframe {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-//================
-.bg-gradient {
-  // background: rgb(255,255,255);
-  background-image: linear-gradient(0deg, rgba(255,255,255,1) 25%, rgba(196,196,196,0.5998774509803921) 52%, rgba(255,255,255,1) 75%);
-}
-
-.bg-gradient-2 {
-  background-image: -webkit-linear-gradient(330deg,#fdfbfb 0,#ebedee 100%);
-  background-image: -o-linear-gradient(330deg,#fdfbfb 0,#ebedee 100%);
-  background-image: linear-gradient(120deg,#fdfbfb 0,#ebedee 100%)
 }
 
 /*=========================================
@@ -273,6 +264,26 @@ box-shadow: -15px 0 15px -20px rgba(0,0,0,0.9), 15px 0 15px -20px rgba(0,0,0,0.9
   height: 60px;
   width: auto;
   filter: invert(30%) sepia(88%) saturate(3017%) hue-rotate(328deg) brightness(101%) contrast(101%);
+}
+//=============================
+.shadow-sm {
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(31, 45, 61, 0.08) !important;
+          box-shadow: 0 0.125rem 0.25rem rgba(31, 45, 61, 0.08) !important;
+}
+
+.shadow {
+  -webkit-box-shadow: 0 0 1.25rem rgba(31, 45, 61, 0.08) !important;
+          box-shadow: 0 0 1.25rem rgba(31, 45, 61, 0.08) !important;
+}
+
+.shadow-lg {
+  -webkit-box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
+  box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
+}
+
+.shadow-none {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 /*=========================================

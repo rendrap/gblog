@@ -91,11 +91,22 @@ body {
     width: 50%;
     height: 50%;
   }
+  .logo-footer {
+    width: 30%;
+  }
+}
+@include media-breakpoint-up(sm) {
+  .logo-footer {
+    width: 40%;
+  }
 }
 @include media-breakpoint-up(md) {
   .logo-sizing {
     width: 80%;
     height: 80%;
+  }
+  .logo-footer {
+    width: 60%;
   }
 }
 // Hamburger menu animation
@@ -335,4 +346,85 @@ color: #404342;
 }
 #cta img {
   mix-blend-mode: multiply;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+/*=========================================
+ * Footer
+=========================================*/
+footer {
+  // ul.lead {
+  //   font-weight: 400;
+  // }
+  ul {
+    padding-left:0;
+
+  }
+  li a {
+    color: #333;
+
+
+    &:hover {
+      color: $lightblue;
+      text-decoration: none;
+    }
+  }
+  h5.text-uppercase {
+    font-weight:500;
+  }
+}
+
+ul#sos-med {
+  display: inline-flex;
+
+  li a.nav-link {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    margin: 0 1rem 0 0;
+    font-size: 15px;
+    color: #666;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &.fb  {
+      background-color: $lightcoral;
+    }
+    &.tw {
+      background-color: $lightcoral;
+    }
+    &.ig {
+      background-color: $lightskyblue;
+    }
+
+    &:hover {
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -ms--transform: rotate(360deg);
+      transform: rotate(360deg);
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      transition: all 0.2s;
+
+      svg {
+        fill: white;
+      }
+    }
+
+
+    svg {
+      vertical-align: baseline;
+      fill: darken(white,12%);
+    }
+  }
+}
+
+.border-top-footer {
+  border-top: 1px solid #BDBDBD;
 }

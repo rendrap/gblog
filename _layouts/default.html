@@ -6,18 +6,12 @@
   <body>
 
     {%- include header.html -%}
-    {%- include headline.html -%}
-    {%- include cards.html -%}
-    {%- include cards-123.html -%}
-    {%- include cta.html -%}
-    {%- include footer.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+      <div class="container py-5">
         {{ content }}
       </div>
-    </main>
 
+    {%- include footer.html -%}
 
   </body>
 

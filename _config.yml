@@ -3,13 +3,13 @@ email:
 description: Client Landing Page
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-instagram_username: jekyll
-facebook_username: jekyll
+twitter_username: twit-name
+instagram_username: IG-name
+facebook_username: FB-name
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 
@@ -26,3 +26,11 @@ plugins:
 #   - vendor/ruby/
 sass:
   style: compact # possible values: nested expanded compact compressed
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      permalink: "/blog/:title"

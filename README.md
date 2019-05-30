@@ -22,4 +22,4 @@ git clone git@github.com:zak905/site.git .
 ```
 bundle exec jekyll serve
 ```
-6. Now browse to [http://localhost:4000](http://localhost:4000){:target="_blank"}
+6. Now browse to [http://localhost:4000](http://localhost:4000)

@@ -236,8 +236,13 @@ div.laptop-wrapper iframe {
 .left-right-shadow {
 box-shadow: -15px 0 15px -20px rgba(0,0,0,0.9), 15px 0 15px -20px rgba(0,0,0,0.9);
 }
-.card.left-right-shadow {
+.all-side-shadow {
+box-shadow: 0 0 15px -6px rgba(0,0,0,0.9);
+}
+.card {
+  &.left-right-shadow, &.all-side-shadow {
   border:none;
+  }
 }
 /*=========================================
  * Hover shadow effect
@@ -491,7 +496,7 @@ ul#sos-med {
       padding-left: 17%;
     }
   }
-  &:hover {
+  &:hover, &.activated {
     .price .hover-bg {
       -webkit-transition-delay: 150ms;
       -o-transition-delay: 150ms;
@@ -514,6 +519,9 @@ ul#sos-med {
     padding: 2.5rem;
     margin-bottom: 0;
     font-weight: 500;
+  }
+  &.activated {
+    transform: scale(1.1);
   }
   .price {
     position: relative;

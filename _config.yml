@@ -7,6 +7,9 @@ twitter_username: twit-name
 instagram_username: IG-name
 facebook_username: FB-name
 
+# show blog post excerpt in blog post list
+show_excerpts: true
+
 # Build settings
 markdown: kramdown
 # theme: minima

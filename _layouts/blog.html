@@ -5,22 +5,32 @@ layout: default
 <div class="container my-5">
     <div class="row flex-xl-nowrap">
         <div class="col-lg-9 mb-9 mb-lg-0">
-            <ul class="post-list">
-                {%- for post in site.posts -%}
-                <li>
-                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                    <span class="post-meta">{{ post.date | date: date_format }}</span>
-                    <h3>
-                        <a class="post-link" href="{{ post.url | relative_url }}">
-                            {{ post.title | escape }}
-                        </a>
-                    </h3>
-                    {%- if site.show_excerpts -%}
-                    {{ post.excerpt }}
-                    {%- endif -%}
-                </li>
-                {%- endfor -%}
-            </ul>
+            <!-- Blog List -->
+            <article class="blog-card">
+                <div class="row">
+                    {%- for post in site.posts -%}
+                        <div class="col-sm-7">
+                            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                            <span class="post-meta">{{ post.date | date: date_format }}</span>
+                            <h1>
+                                <a class="post-link" href="{{ post.url | relative_url }}">
+                                    {{ post.title | escape }}
+                                </a>
+                            </h1>
+                            <p>
+                            {%- if site.show_excerpts -%}
+                            {{ post.excerpt }}
+                            {%- endif -%}
+                            </p>
+                        </div>
+
+                        <div class="col-sm-5 mb-5 mb-sm-0">
+                          <img class="img-fluid w-100 rounded" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+                        </div>
+                    {%- endfor -%}
+            </div>
+            </article>
+        <!-- End Blog List -->
         </div>
         <div class="col-lg-3 align-self-start sticky-top bg-secondary sidebar d-none d-xl-block">
         </div>

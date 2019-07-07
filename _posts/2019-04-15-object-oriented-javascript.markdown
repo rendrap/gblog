@@ -3,6 +3,7 @@ layout: post
 title:  "Object oriented Javascript"
 date:   2019-04-15 12:44:07 +0700
 categories: javascript jekyll OOP
+image: "/assets/blog/blog-list-img03.jpg"
 ---
 The Jekyll gem makes a `jekyll` executable available to you in your terminal.
 

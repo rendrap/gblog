@@ -6,31 +6,30 @@ layout: default
     <div class="row flex-xl-nowrap">
         <div class="col-lg-9 mb-9 mb-lg-0">
             <!-- Blog List -->
-            <article class="blog-card">
+            {%- for post in site.posts -%}
+            <article class="blog-card mb-4">
                 <div class="row">
-                    {%- for post in site.posts -%}
-                        <div class="col-sm-7">
-                            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                            <span class="post-meta">{{ post.date | date: date_format }}</span>
-                            <h1>
-                                <a class="post-link" href="{{ post.url | relative_url }}">
-                                    {{ post.title | escape }}
-                                </a>
-                            </h1>
-                            <p>
+                    <div class="col-sm-7">
+                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                        <span class="post-meta">{{ post.date | date: date_format }}</span>
+                        <h1>
+                            <a class="post-link" href="{{ post.url | relative_url }}">
+                                {{ post.title | escape }}
+                            </a>
+                        </h1>
+                        <p>
                             {%- if site.show_excerpts -%}
                             {{ post.excerpt }}
                             {%- endif -%}
-                            </p>
-                        </div>
-
-                        <div class="col-sm-5 mb-5 mb-sm-0">
-                          <img class="img-fluid w-100 rounded" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
-                        </div>
-                    {%- endfor -%}
-            </div>
+                        </p>
+                    </div>
+                    <div class="col-sm-5 mb-5 mb-sm-0">
+                        <img class="img-fluid w-100 rounded" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+                    </div>
+                </div>
             </article>
-        <!-- End Blog List -->
+            {%- endfor -%}
+            <!-- End Blog List -->
         </div>
         <div class="col-lg-3 align-self-start sticky-top bg-secondary sidebar d-none d-xl-block">
         </div>

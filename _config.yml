@@ -7,6 +7,9 @@ twitter_username: twit-name
 instagram_username: IG-name
 facebook_username: FB-name
 
+# show blog post excerpt in blog post list
+show_excerpts: true
+
 # Build settings
 markdown: kramdown
 # theme: minima
@@ -28,9 +31,13 @@ sass:
   style: compact # possible values: nested expanded compact compressed
 
 defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts" # previously `post` in Jekyll 2.2.
-    values:
-      permalink: "/blog/:title"
+
+- scope:
+    path: "" # an empty string here means all files in the project
+    type: "posts" # previously `post` in Jekyll 2.2.
+  values:
+    permalink: "/blog/:title"
+
+collections:
+  blog_authors:
+    output: false

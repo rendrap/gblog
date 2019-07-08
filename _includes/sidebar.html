@@ -1,2 +1,13 @@
-<div class="col-lg-3 align-self-start sticky-top bg-secondary sidebar d-none d-xl-block">
+<div class="col-lg-3 col-sm-12 align-self-start sticky-top sidebar d-xl-block">
+    <h3 class="sidebar-title">Recent Posts</h3>
+    <ul class="sidebar-list recent-list">
+      {% for post in site.posts | limit: site.recent_post_limit %}
+        <li>
+            <a class="sidebar-thumbnail-wrapper" href="{{ post.url | relative_url }}">
+                <img class="sidebar-thumbnail" src={{ "/assets/blog/sidebar/" | relative_url }}{{ post.image }} alt="{{ post.title | escape }}">
+                <p class="sidebar-thumbnail-copy">{{ post.title | escape }}</p>
+            </a>
+        </li>
+      {% endfor %}
+    </ul>
 </div>

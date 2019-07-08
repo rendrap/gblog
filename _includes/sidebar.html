@@ -1,13 +1,42 @@
 <div class="col-lg-3 col-sm-12 align-self-start sticky-top sidebar d-xl-block">
     <h3 class="sidebar-title">Recent Posts</h3>
     <ul class="sidebar-list recent-list">
-      {% for post in site.posts | limit: site.recent_post_limit %}
+        {% for post in site.posts | limit: site.recent_post_limit %}
         <li>
             <a class="sidebar-thumbnail-wrapper" href="{{ post.url | relative_url }}">
                 <img class="sidebar-thumbnail" src={{ "/assets/blog/sidebar/" | relative_url }}{{ post.image }} alt="{{ post.title | escape }}">
                 <p class="sidebar-thumbnail-copy">{{ post.title | escape }}</p>
             </a>
         </li>
+        {% endfor %}
+    </ul>
+    <h3 class="sidebar-title">Categories</h3>
+    <ul class="sidebar-list category-list">
+      <!-- https://github.com/mmistakes -->
+      {% assign categories_max = 0 %}
+      {% for category in site.categories %}
+        {% if category[1].size > categories_max %}
+          {% assign categories_max = category[1].size %}
+        {% endif %}
       {% endfor %}
+
+      <a id="page-title"></a>
+      <ul class="category">
+        {% for i in (1..categories_max) reversed %}
+          {% for category in site.categories %}
+            {% if category[1].size == i %}
+              <li>
+                  <a class="text-capitalize bluish" href="{{ "/blog/categories" | relative_url }}#{{category[0]|slugize}}">
+                  {{ category[0] | strip }}
+                  <span class="category-count">({{ i }})</span>
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </ul>
+
+
+
     </ul>
 </div>

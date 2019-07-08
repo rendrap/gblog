@@ -2,7 +2,7 @@
 layout: post
 title:  "Object oriented Javascript"
 date:   2019-04-15 12:44:07 +0700
-categories: javascript jekyll OOP
+categories: javascript jekyll
 image: "blog-img03.jpg"
 author: Even
 ---

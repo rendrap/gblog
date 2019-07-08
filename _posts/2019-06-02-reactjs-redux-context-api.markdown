@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "React.js Redux and Context API"
-date:   2019-06-14 01:23:07 +0800
+date: 2019-06-02 01:23:07 +0800
 categories: react framework
 image: "/assets/blog/blog-list-img05.jpg"
+author: Even
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione odio, ducimus tempore iusto nesciunt porro nulla veniam, cumque ullam doloribus, consequatur sapiente molestias alias libero excepturi delectus obcaecati modi accusamus.

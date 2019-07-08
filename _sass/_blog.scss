@@ -12,3 +12,24 @@
   padding-bottom: 1.5rem;
   @include font-size(.875rem);
 }
+
+// Blog card list
+.blog-info {
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  .post-author-avatar {
+    width: 28px;
+    > img {
+      display: block;
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .blog-info {
+    font-size: 70%;
+  }
+}

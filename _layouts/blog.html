@@ -2,29 +2,36 @@
 layout: default
 ---
 {%- if site.posts.size > 0 -%}
-<div class="container my-5">
+<div class="container my-4">
     <div class="row flex-xl-nowrap">
-        <div class="col-lg-9 mb-9 mb-lg-0">
+        <div class="col-lg-9 mb-9 mb-lg-0 pr-5">
             <!-- Blog List -->
             {%- for post in site.posts -%}
             <article class="blog-card mb-4">
                 <div class="row">
                     <div class="col-sm-7">
-                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                        <span class="post-meta">{{ post.date | date: date_format }}</span>
                         <h1>
-                            <a class="post-link" href="{{ post.url | relative_url }}">
-                                {{ post.title | escape }}
+                            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}
                             </a>
                         </h1>
-                        <p>
+                        <div class="blog-info my-3">
+                            <span class="post-meta mr-3">{{ post.date | date_to_string: "ordinal", "US" }}</span>
+                            {%- if post.author -%}
+                            {% assign author = site.blog_authors | where:"short_name", post.author | first %}
+                            <div class="post-author-avatar mr-2">
+                                <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}">
+                            </div>
+                            <div class="post-author-name">{{ author.name }}</div>
+                            {%- endif -%}
+                        </div>
                             {%- if site.show_excerpts -%}
                             {{ post.excerpt }}
                             {%- endif -%}
-                        </p>
                     </div>
                     <div class="col-sm-5 mb-5 mb-sm-0">
-                        <img class="img-fluid w-100 rounded" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+                        <a class="post-link" href="{{ post.url | relative_url }}">
+                            <img class="img-fluid w-100 rounded" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+                        </a>
                     </div>
                 </div>
             </article>

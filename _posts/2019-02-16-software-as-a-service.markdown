@@ -4,6 +4,7 @@ title:  "Software as a service!"
 date:   2019-02-16 04:14:07 +0700
 categories: SAAS
 image: "/assets/blog/blog-list-img01.jpg"
+author: Knut
 ---
 
 **Software as a service** (**SaaS** <span class="nowrap"><span class="IPA nopopups noexcerpt">[/<span style="border-bottom:1px dotted"><span title="'s' in 'sigh'">s</span><span title="/æ/: 'a' in 'bad'">æ</span><span title="'s' in 'sigh'">s</span></span>/](/wiki/Help:IPA/English "Help:IPA/English")</span></span><sup id="cite_ref-1" class="reference">[[1]](#cite_note-1)</sup>) is a software [licensing](/wiki/Software_licensing "Software licensing") and [delivery](/wiki/Software_delivery "Software delivery") model in which [software](/wiki/Software "Software") is licensed on a [subscription](/wiki/Subscription "Subscription") basis and is centrally [hosted](/wiki/Internet_hosting_service "Internet hosting service"). It is sometimes referred to as "on-demand software", and was formerly referred to as "software plus services" by [Microsoft](/wiki/Microsoft "Microsoft").<sup id="cite_ref-2" class="reference">[[2]](#cite_note-2)</sup> SaaS is typically accessed by [users](/wiki/User_(computing) "User (computing)") using a [thin client](/wiki/Thin_client "Thin client"), e.g. via a [web browser](/wiki/Web_browser "Web browser").

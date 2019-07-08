@@ -1,3 +1,9 @@
+$bluish: #00c0fa;
+
+.bluish {
+  color: $bluish;
+}
+
 // Blog card list
 .blog-card h1 a {
   color: black;
@@ -56,7 +62,7 @@ html {
   @supports (position: sticky) {
    position: sticky;
    top: .75rem;
-   height: calc(100vh - 4rem);
+   // height: calc(100vh - 4rem);
    overflow-y: auto;
  }
  // background-color: lightblue;
@@ -83,7 +89,7 @@ html {
     content: "";
   }
 
-  .sidebar-list {
+  .sidebar-list,.sidebar-list ul {
     margin-bottom: 32px;
     padding: 0;
   }
@@ -108,12 +114,26 @@ html {
     color: #637787;
     margin: 0;
   }
+  span.category-count {
+    font-size: .875rem;
+    font-weight: 300;
+  }
 }
 
 @include media-breakpoint-up(xl) {
   .sidebar {
     .sidebar-title:before {
      width:calc(33.333% - 0px);
+    }
+  }
+}
+
+// Single post
+.post-header {
+  .blog-info {
+    justify-content: space-between;
+    [class*=blog-info-] {
+      align-items: center;
     }
   }
 }

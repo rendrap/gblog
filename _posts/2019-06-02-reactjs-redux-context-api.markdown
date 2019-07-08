@@ -3,7 +3,7 @@ layout: post
 title:  "React.js Redux and Context API"
 date: 2019-06-02 01:23:07 +0800
 categories: react framework
-image: "/assets/blog/blog-list-img05.jpg"
+image: "blog-img07.jpg"
 author: Even
 ---
 

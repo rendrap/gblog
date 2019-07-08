@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2019-05-03 21:44:07 +0700
 categories: jekyll update
-image: "/assets/blog/blog-list-img04.jpg"
+image: "blog-img06.jpg"
 author: Simen
 ---
 

@@ -14,6 +14,9 @@
 }
 
 // Blog card list
+.blog-card h1 a {
+  color: black;
+}
 .blog-info {
   display: -ms-flexbox;
   display: flex;
@@ -26,6 +29,9 @@
       border-radius: 50%;
     }
   }
+  .post-meta {
+    margin:0;
+  }
 }
 
 @include media-breakpoint-down(xs) {
@@ -33,3 +39,29 @@
     font-size: 70%;
   }
 }
+
+// Pagination
+.pagination a, .pagination span {
+    padding: 7px 18px;
+    border: 1px solid #eee;
+    margin-left: -2px;
+    margin-right: -2px;
+    background-color: #ffffff;
+    display: inline-block;
+  }
+
+.pagination a {
+    &:hover {
+        background-color: #f1f1f1;
+        color: #333;
+    }
+ }
+
+.pagination {
+    text-align: center;
+ }
+
+ html {
+     visibility: visible;
+     opacity: 1;
+ }

@@ -45,3 +45,4 @@ collections:
 # specifies how many items should be displayed per page in the blog
 paginate: 4
 paginate_path: "/blog/page:num/"
+recent_post_limit: 4

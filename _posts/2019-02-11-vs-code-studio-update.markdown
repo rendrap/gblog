@@ -3,6 +3,7 @@ layout: post
 title:  "VS Code Studio Latest Update & New Features"
 date:   2019-02-11 04:14:07 +0700
 categories: SAAS
+tags: [vs code, code editor, developer]
 image: "blog-img01.jpg"
 author: Knut
 ---

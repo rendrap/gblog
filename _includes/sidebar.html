@@ -10,7 +10,8 @@
         </li>
         {% endfor %}
     </ul>
-    <h3 class="sidebar-title">Categories</h3>
+    <!-- Sidebar - Categgories -->
+    <a class="text-decoration-none" href="{{ "/blog/categories" | relative_url }}#categories"><h3 class="sidebar-title">Categories</h3></a>
     <ul class="sidebar-list category-list">
       <!-- https://github.com/mmistakes -->
       {% assign categories_max = 0 %}
@@ -35,8 +36,26 @@
           {% endfor %}
         {% endfor %}
       </ul>
-
-
-
     </ul>
+    <!-- Sidebar - Categgories End-->
+
+
+    <!-- Sidebar - Tags -->
+    <a class="text-decoration-none" href="{{ "/blog/tags" | relative_url }}#tags"><h3 class="sidebar-title">Tags</h3></a>
+    <ul class="sidebar-list category-list">
+      <!-- https://github.com/mmistakes -->
+      <a id="page-title"></a>
+      <ul class="category">
+          {% assign sorted-tags = site.tags | sort %}
+          {% for tag in sorted-tags %}
+              <li class="d-inline">
+                  <a class="bluish btn btn-cta hover-translate-y-n3 text-capitalize text-white" href="{{ "/blog/tags" | relative_url }}#{{tag[0]|slugize}}">
+                  {{ tag[0] | strip }}
+                </a>
+              </li>
+          {% endfor %}
+      </ul>
+    </ul>
+    <!-- Sidebar - Tags End -->
+
 </div>

@@ -3,6 +3,7 @@ layout: post
 title:  "Software as a service!"
 date:   2019-02-16 04:14:07 +0700
 categories: SAAS
+tags: [saas, business]
 image: "blog-img04.jpg"
 author: Knut
 ---

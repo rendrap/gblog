@@ -3,6 +3,7 @@ layout: post
 title:  "Coding Course Bundle: Learn Python, Ruby, JavaScript"
 date:   2019-04-19 12:44:07 +0700
 categories: programming
+tags: [course, "master class"]
 image: "blog-img05.jpg"
 author: Even
 ---

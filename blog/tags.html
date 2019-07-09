@@ -1,14 +1,15 @@
 ---
 layout: blog
-title: Categories
+title: Tags
 ---
-<h1 id="categories" class="mb-5 category-title">Categories</h1>
+<h1 id="tags" class="mb-5 category-title">Tags</h1>
 <div id="category-list">
-    {% for category in site.categories %}
+    {% assign sorted-tags = site.tags | sort %}
+    {% for tag in sorted-tags %}
     <div class="category-item mb-4">
-        {% capture category_name %}{{ category | first }}{% endcapture %}
-        <h3 id="{{ category_name | slugize }}" class="category-head text-capitalize">{{ category_name }}</h3>
-        {% for post in site.categories[category_name] %}
+        {% capture tag_name %}{{ tag | first }}{% endcapture %}
+        <h3 id="{{ tag_name | slugize }}" class="category-head text-capitalize">{{ tag_name }}</h3>
+        {% for post in site.tags[tag_name] %}
         <div>
             <a class="category-thumbnail-wrapper" href="{{ post.url | relative_url }}">
                 <img class="category-thumbnail" src={{ "/assets/blog/sidebar/" | relative_url }}{{ post.image }} alt="{{ post.title | escape }}">

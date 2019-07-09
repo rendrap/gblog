@@ -4,7 +4,8 @@ title: Tags
 ---
 <h1 class="mb-5 category-title">Tags</h1>
 <div id="category-list">
-    {% for tag in site.tags %}
+    {% assign sorted-tags = site.tags | sort %}
+    {% for tag in sorted-tags %}
     <div class="category-item mb-4">
         {% capture tag_name %}{{ tag | first }}{% endcapture %}
         <h3 id="{{ tag_name | slugize }}" class="category-head text-capitalize">{{ tag_name }}</h3>

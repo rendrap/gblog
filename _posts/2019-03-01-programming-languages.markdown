@@ -3,6 +3,7 @@ layout: post
 title:  "Programming Languages Choice"
 date:   2019-03-01 04:14:07 +0700
 categories: programming
+tags: [javascript, language, jetbrains]
 image: "blog-img02.jpg"
 author: Knut
 ---

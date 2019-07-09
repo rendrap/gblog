@@ -46,7 +46,8 @@
       <!-- https://github.com/mmistakes -->
       <a id="page-title"></a>
       <ul class="category">
-          {% for tag in site.tags %}
+          {% assign sorted-tags = site.tags | sort %}
+          {% for tag in sorted-tags %}
               <li>
                   <a class="text-capitalize bluish" href="{{ "/blog/tags" | relative_url }}#{{tag[0]|slugize}}">
                   {{ tag[0] | strip }}

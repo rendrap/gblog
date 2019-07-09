@@ -3,6 +3,7 @@ layout: post
 title:  "React.js Redux and Context API"
 date: 2019-06-02 01:23:07 +0800
 categories: programming
+tags: [react.js, redux, language]
 image: "blog-img07.jpg"
 author: Even
 ---

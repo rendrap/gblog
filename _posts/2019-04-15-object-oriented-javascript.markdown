@@ -6,9 +6,7 @@ categories: javascript jekyll
 image: "blog-img03.jpg"
 author: Even
 ---
-The Jekyll gem makes a `jekyll` executable available to you in your terminal.
-
-You can use this command in a number of ways:
+The Jekyll gem makes a `jekyll` executable available to you in your terminal. You can use this command in a number of ways:
 
 * `jekyll new` - Creates a new Jekyll site with default gem-based theme
 * `jekyll new --blank` - Creates a new blank Jekyll site scaffold

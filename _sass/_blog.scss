@@ -29,8 +29,25 @@ a.bluish, .bluish {
 @include media-breakpoint-down(xs) {
   .blog-info {
     font-size: 70%;
-    display: block;
-    margin-bottom: 0.5rem;
+  }
+  .post-header {
+    .blog-info {
+      font-size: 70%;
+      display: block;
+      .blog-info-left {
+        margin-bottom: 0.5rem;
+        justify-content: center;
+      }
+      .blog-info-right {
+        flex-direction: column;
+        .post-categories {
+          margin-bottom: 0.5rem;
+        }
+      }
+      span.pipe {
+        display: none;
+      }
+    }
   }
 }
 

@@ -30,9 +30,27 @@ layout: blog
               {% endif %}
               {% for category in categories %}
               <a class="bluish" href="{{ "/blog/categories" | relative_url }}#{{category | slugize}}">{{category}}</a>
-              {% unless forloop.last %}&nbsp;{% endunless %}
+              {% unless forloop.last %}<span>&nbsp;</span>{% endunless %}
               {% endfor %}
-          </div>
+            </div>
+
+            {% if page.tags %}
+            <div class="post-tags d-flex">
+              <span class="pr-1 pipe">|</span>
+              {% if post %}
+                {% assign tags = post.tags %}
+              {% else %}
+                {% assign tags = page.tags %}
+              {% endif %}
+              {% for tag in tags %}
+              <div class="tag-icon-text-wrapper">
+                {%- include price-tags.html -%}
+                <a class="bluish price-tags pl-1" href="{{ "/blog/tags" | relative_url }}#{{tag | slugize}}">{{tag}}</a>
+              </div>
+              {% unless forloop.last %}<span>&nbsp;</span>{% endunless %}
+              {% endfor %}
+            </div>
+            {% endif %}
         </div>
 
         </div>

@@ -10,6 +10,7 @@
         </li>
         {% endfor %}
     </ul>
+    <!-- Sidebar - Categgories -->
     <h3 class="sidebar-title">Categories</h3>
     <ul class="sidebar-list category-list">
       <!-- https://github.com/mmistakes -->
@@ -35,8 +36,25 @@
           {% endfor %}
         {% endfor %}
       </ul>
-
-
-
     </ul>
+    <!-- Sidebar - Categgories End-->
+
+
+    <!-- Sidebar - Tags -->
+    <h3 class="sidebar-title">Tags</h3>
+    <ul class="sidebar-list category-list">
+      <!-- https://github.com/mmistakes -->
+      <a id="page-title"></a>
+      <ul class="category">
+          {% for tag in site.tags %}
+              <li>
+                  <a class="text-capitalize bluish" href="{{ "/blog/tags" | relative_url }}#{{tag[0]|slugize}}">
+                  {{ tag[0] | strip }}
+                </a>
+              </li>
+          {% endfor %}
+      </ul>
+    </ul>
+    <!-- Sidebar - Tags End -->
+
 </div>

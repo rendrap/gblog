@@ -1,7 +1,8 @@
 $bluish: #00c0fa;
 
-.bluish {
+a.bluish, .bluish {
   color: $bluish;
+  text-decoration: none;
 }
 
 // Blog card list
@@ -50,11 +51,6 @@ $bluish: #00c0fa;
 
 .pagination {
   text-align: center;
-}
-
-html {
- visibility: visible;
- opacity: 1;
 }
 
  // Sidebar
@@ -131,13 +127,38 @@ html {
 
 // Single post
 .post-header {
+  .post-tags {
+    svg {
+      opacity:.5;
+    }
+
+    .tag-icon-text-wrapper {
+      &:hover {
+        svg {
+          opacity:1;
+          -webkit-transition: all 0.2s;
+          -moz-transition: all 0.2s;
+          -o-transition: all 0.2s;
+          -ms-transition: all 0.2s;
+          transition: all 0.2s;
+        }
+      }
+    }
+  }
+
+
   .blog-info {
     justify-content: space-between;
     [class*=blog-info-] {
       align-items: center;
+      .pipe {
+        padding-left: 6px;
+      }
     }
   }
 }
+
+
 
 // Category page
 .category-title:before {
@@ -159,7 +180,7 @@ html {
 
   .category-thumbnail {
     margin-right: 12px;
-    width: 94px;
+    width: 105px;
   }
   .thumbnail-text p{
     margin: 0;
@@ -182,4 +203,10 @@ html {
     content: "";
   }
 
+}
+
+
+html {
+ visibility: visible;
+ opacity: 1;
 }

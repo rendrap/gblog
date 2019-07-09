@@ -44,9 +44,6 @@ a.bluish, .bluish {
           margin-bottom: 0.5rem;
         }
       }
-      span.pipe {
-        display: none;
-      }
     }
   }
 }
@@ -162,6 +159,9 @@ a.bluish, .bluish {
 
 // Single post
 .post-header {
+  .post-categories {
+    margin-right: 0.5rem;
+  }
   .post-tags {
     svg {
       opacity:.5;

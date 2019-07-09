@@ -29,6 +29,8 @@ a.bluish, .bluish {
 @include media-breakpoint-down(xs) {
   .blog-info {
     font-size: 70%;
+    display: block;
+    margin-bottom: 0.5rem;
   }
 }
 

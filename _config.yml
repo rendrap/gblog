@@ -29,7 +29,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 sass:
-  style: compact # possible values: nested expanded compact compressed
+  style: compressed # possible values: nested expanded compact compressed
 
 defaults:
 

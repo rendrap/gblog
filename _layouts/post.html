@@ -6,6 +6,7 @@ layout: blog
     <header class="post-header">
         <h1 class="post-title p-name my-4" itemprop="name headline">{{ page.title | escape }}</h1>
         <div class="blog-info my-3">
+          <!-- Avatar Start -->
           <div class="blog-info-left d-flex">
             <p class="post-meta mr-3">
                 <time class="dt-published" datetime="{{ page.date | date_to_string: "ordinal", "US" }}" itemprop="datePublished">
@@ -15,11 +16,12 @@ layout: blog
             {%- if page.author -%}
             {% assign author = site.blog_authors | where:"short_name", page.author | first %}
             <div class="post-author-avatar mr-2">
-                <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}">
+                <img class ="hover-scale-110" data-toggle="tooltip" data-placement="top" title="{{ author.content | strip_html }}" src="{{ author.avatar | relative_url }}" alt="{{ author.name }}">
             </div>
             <div class="post-author-name">{{ author.name }}</div>
             {%- endif -%}
           </div>
+          <!-- Avatar End -->
 
           <div class="blog-info-right d-flex">
             <div class="post-categories">Categories:&nbsp

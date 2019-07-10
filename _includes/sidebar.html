@@ -4,7 +4,7 @@
         {% for post in site.posts | limit: site.recent_post_limit %}
         <li>
             <a class="sidebar-thumbnail-wrapper" href="{{ post.url | relative_url }}">
-                <img class="sidebar-thumbnail" src={{ "/assets/blog/sidebar/" | relative_url }}{{ post.image }} alt="{{ post.title | escape }}">
+                <img class="sidebar-thumbnail" src={{ "/assets/blog/" | relative_url }}{{ post.image }} alt="{{ post.title | escape }}">
                 <p class="sidebar-thumbnail-copy">{{ post.title | escape }}</p>
             </a>
         </li>

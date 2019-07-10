@@ -11,7 +11,7 @@ title: Categories
         {% for post in site.categories[category_name] %}
         <div>
             <a class="category-thumbnail-wrapper" href="{{ post.url | relative_url }}">
-                <img class="category-thumbnail" src={{ "/assets/blog/sidebar/" | relative_url }}{{ post.image }} alt="{{ post.title | escape }}">
+                <img class="category-thumbnail" src={{ "/assets/blog/" | relative_url }}{{ post.image }} alt="{{ post.title | escape }}">
                 <div class="thumbnail-text">
                     <p class="category-thumbnail-copy">{{ post.title | escape }}</p>
                     <p class="post-excerpts">{{ post.excerpt | strip_html | strip_newlines | truncatewords: 25 }}</p>

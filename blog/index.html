@@ -16,7 +16,7 @@ title: Blog
                 {%- if post.author -%}
                 {% assign author = site.blog_authors | where:"short_name", post.author | first %}
                 <div class="post-author-avatar mr-2">
-                    <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}">
+                    <img class ="hover-scale-110" data-toggle="tooltip" data-placement="top" title="{{ author.content | strip_html }}" src="{{ author.avatar | relative_url }}" alt="{{ author.name }}">
                 </div>
                 <div class="post-author-name">{{ author.name }}</div>
                 {%- endif -%}
